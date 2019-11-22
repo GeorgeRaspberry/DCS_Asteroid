@@ -3,6 +3,6 @@ School project
 
 ## Members:
   - Djordje Dragutinovic @djdragutinovic
-  - David Jovicic
-  - Vuk Isic
-  - Dubravko Petrovic
+  - David Jovicic @GeorgeRaspberry
+  - Vuk Isic @vukisic
+  - Dubravko Petrovic @Duksic

@@ -1,13 +1,7 @@
 from PyQt5.QtCore import QSize, QDir
 from PyQt5.QtGui import QBrush, QFont, QPalette, QFontDatabase, QImage
 from PyQt5.QtWidgets import QGraphicsView, QGraphicsScene, QApplication, QPushButton, QLabel
-
-class FontInitializer:
-
-    def __init__(self):
-        dir_ = QDir("fonts")
-        _id = QFontDatabase.addApplicationFont("fonts/mini_pixel-7.ttf")
-        self.miniPixel7 = QFontDatabase.applicationFontFamilies(_id)[0]
+from fonts import FontInitializer
 
 
 class StartScene(QGraphicsScene):

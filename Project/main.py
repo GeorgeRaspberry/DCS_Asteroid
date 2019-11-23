@@ -1,9 +1,6 @@
 import sys
-
-from PyQt5.QtWidgets import QApplication, QGraphicsView
-
 from scenes import SceneState
-
+from startScene import *
 
 class MainWindow(QGraphicsView):
 
@@ -15,8 +12,9 @@ class MainWindow(QGraphicsView):
         self.rect().center()
         self.setFixedWidth(self.win_w)
         self.setFixedHeight(self.win_h)
-        self.sceneState = SceneState.NONE
-        # self.setScene(CUSTOM_SCENE)
+        self.sceneState = SceneState.START_SCENE
+        self.startScene = StartScene(self, self.win_w, self.win_h)
+        self.setScene(self.startScene)
         self.show()
 
 
